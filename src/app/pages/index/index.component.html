@@ -1,0 +1,12 @@
+<div id="back-color">
+    <div class="container">
+        <div class="elements">
+            <div *ngFor="let profile of gameProfiles" class="game {{profile.game.alias}}" > 
+                <app-game-profile [gameProfile]="profile"></app-game-profile>
+            </div>
+            <div class="profile-edit">
+                <button id="create" routerLink="/new-profile"><i class="fas fa-2x fa-plus"></i></button>
+            </div>
+        </div>        
+    </div>
+</div>  

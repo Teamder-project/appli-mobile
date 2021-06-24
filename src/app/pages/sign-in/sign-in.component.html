@@ -1,0 +1,25 @@
+
+<div class="block" id="back-color">
+    <div class="main">
+        <form [formGroup]="gamerForm" (ngSubmit)="onSubmit()">
+            <div id="error">
+                <p *ngFor="let error of error">{{error}}</p>
+            </div>
+            <label for="username">pseudo</label>
+            <input type="text" formControlName="username">
+            <label for="password">mot de passe</label>
+            <input type="password" formControlName="password">
+            <label for="email">email</label>
+            <input type="text" formControlName="email">
+            <label for="birthday">date de naissance</label>
+            <input type="date" formControlName="birthday">
+            <label for="gender">sexe</label>
+            <input type="text" formControlName="gender">
+            <label for="country">pays</label>
+            <input type="text" formControlName="country" id="pays"> 
+            <div>
+            <button class="submit" type="submit">Enregistrer</button>
+            </div>
+        </form>
+    </div>
+</div>

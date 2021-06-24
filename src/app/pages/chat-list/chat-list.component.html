@@ -1,0 +1,62 @@
+<div class="background-chat">
+    <div class="chat-list">
+        <div class="friend-list">
+            <div *ngFor="let friend of friends">
+                <app-friends [friend]="friend"></app-friends>
+                <hr>
+            </div>
+        </div>
+        <div class="conversation">
+            <div class="conversation-nom">
+                <h3>Toto</h3>
+                <button type="button" (click)="displayFriends()"><i class="fas fa-user-plus"></i></button>
+            </div>
+            <div>
+                <div class="message envoyer">
+                    <img src="../../../assets/img/default-img.jpg" alt="default">
+                    <div>
+                        <p>Bonjour</p>
+                        <p>18/05/2019 à 14:30</p>
+                    </div>
+                </div>
+                <div class="message envoyer">
+                    <img src="../../../assets/img/default-img.jpg" alt="default">
+                    <div>
+                        <p>Ca va ?</p>
+                        <p>18/05/2019 à 14:32</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="message recu">
+                    <img src="../../../assets/img/default-img.jpg" alt="default">
+                    <div>
+                        <p>Bonjour</p>
+                        <p>18/05/2019 à 14:31</p>
+                    </div>
+                </div>
+                <div class="message recu">
+                    <img src="../../../assets/img/default-img.jpg" alt="default">
+                    <div>
+                        <p>Oui et toi ?</p>
+                        <p>18/05/2019 à 14:33</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <div>
+                <form [formGroup]="sendMsg" (ngSubmit)="sendMessage()">
+                    <input id="input" type="text" value="" placeholder="Entrez votre message :" formControlName="msg">
+                    <button type="submit"><i class="far fa-share-square"></i></button>
+                </form>
+            </div>
+        </div>
+        <div id="add-list" class="add-group display">
+            <div *ngFor="let friend of friends">
+                <app-friends [friend]="friend"></app-friends>
+                <hr>
+            </div>
+        </div>
+    </div>
+</div>
+

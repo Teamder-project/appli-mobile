@@ -1,0 +1,19 @@
+.body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(45deg, red,  rgb(10, 40, 92));
+    /* Préserve le ratio de l'image */
+   min-width: 100%;
+   min-height: 100%;
+    position: fixed;
+    color: white;
+}
+
+.bouton{
+    color: blue;
+}
+.bouton:hover {
+    color: red
+}

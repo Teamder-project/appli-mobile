@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
+
+/* ==========================================================================
+    Responsive
+========================================================================== */
+
+/* PC */
+
+@media (min-width: 991px) {
+  #back-color {
+    background-color: #171717;
+    color: white;
+  }
+  .block {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("../../../assets/img/league-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: auto;
+    top: 70px;
+    left: 0;
+    /* Préserve le ratio de l'image */
+    min-width: 100%;
+    min-height: 100%;
+  }
+  h2 {
+    margin-top: 8%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    left: 0;
+    right: 0;
+    padding: 45px;
+    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 10%, rgb(26, 82, 104) 190%);
+    border-radius: 33%;
+    width: 80%;
+  }
+  .lol-text {
+    width: 40%;
+  }
+  .lol-text p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+  .lol-text a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #527596;
+    opacity: 80%;
+    color: white;
+    width: 25%;
+    margin: auto;
+  }
+  a:hover {
+    background-color: #527596;
+    opacity: 100%;
+  }
+}
+
+/* Tablette */
+
+@media all and (min-width: 767px) and (max-width: 991px) {
+  #back-color {
+    background-color: #171717;
+    color: white;
+    
+  }
+  .block {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("../../../assets/img/league-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: auto;
+    top: 70px;
+    left: 0;
+    /* Préserve le ratio de l'image */
+    min-width: 100%;
+    min-height: 100%;
+  }
+  h2 {
+    margin-top: 8%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    left: 0;
+    right: 0;
+    padding: 45px;
+    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 10%, rgb(26, 82, 104) 190%);
+    border-radius: 33%;
+    width: 80%;
+  }
+  .lol-text {
+    width: 60%;
+  }
+  .lol-text p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+  .lol-text a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #527596;
+    opacity: 80%;
+    color: white;
+    width: 25%;
+    margin: auto;
+  }
+  a:hover {
+    background-color: #527596;
+    opacity: 100%;
+  }
+}
+
+/* Mobile */
+
+@media (max-width:767px) {
+  #back-color {
+    background-color: #171717;
+    color: white;
+  }
+  .block {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url("../../../assets/img/league-page.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: auto;
+    top: 70px;
+    left: 0;
+    /* Préserve le ratio de l'image */
+    min-width: 100%;
+    min-height: 100%;
+  }
+  h2 {
+    margin-top: 8%;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  p {
+    left: 0;
+    right: 0;
+    padding: 45px;
+    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 10%, rgb(26, 82, 104) 190%);
+    border-radius: 33%;
+    width: 80%;
+  }
+  .lol-text {
+    width: 100%;
+  }
+  .lol-text p {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: white;
+    margin-top: 80px;
+    margin-left: 40px;
+  }
+  .lol-text a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
+  a {
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 15px;
+    background-color: #527596;
+    opacity: 80%;
+    color: white;
+    width: 25%;
+    margin: auto;
+  }
+  a:hover {
+    background-color: #527596;
+    opacity: 100%;
+  }
+}

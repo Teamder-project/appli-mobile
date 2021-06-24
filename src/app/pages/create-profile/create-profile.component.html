@@ -1,0 +1,27 @@
+<div class="block" id="back-color">
+    <div class="main">
+        <form [formGroup]="gamerProfileForm" (ngSubmit)="createProfile()">
+            <div id="error">
+                <p *ngFor="let error of error">{{error}}</p>
+            </div>
+            <label for="games">Jeu :</label>
+            <div formGroupName="game">
+                <select name="games" id="games" formControlName="id">
+                    <option *ngFor="let game of games" value="{{game.id}}">{{game.name}}</option>
+                </select>
+            </div>
+            <label for="username">pseudo</label>
+            <input type="text" formControlName="nickname_game">
+            <label for="goals">Objectifs :</label>
+            <select name="goals" id="goals" formControlName="goals">
+                <option value="try-hard">Compétition</option>
+                <option value="chill">Détente</option>
+            </select>
+            <label for="description">Description</label>
+            <textarea formControlName="description" id="description"></textarea> 
+            <div>
+                <button class="submit" type="submit">Enregistrer</button>
+            </div>
+        </form>
+    </div>
+    </div>

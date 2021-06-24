@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
+
+/* ==========================================================================
+    Responsive
+========================================================================== */
+
+/* PC */
+@media (min-width: 991px) {
+    #back-color {
+        background-color: #171717;
+        color: white;
+    }
+    
+    .block {
+        font-family: 'Josefin Sans', sans-serif;
+        position: fixed; 
+        height: auto;
+    /* Préserve le ratio de l'image */
+        min-width: 100%;
+        min-height: 100%;
+       
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        width: 100%;
+    }
+    
+    .about-text{
+        margin-top: 50px;
+        display: flex;
+        margin: 60px;
+    }
+   
+    
+    img {
+        margin-top: 5%;
+        display: flex;
+        align-items: center;
+        max-width: 60%;
+    }
+    
+    .corpus {
+        padding: 40px;
+        background-image: linear-gradient(to left, rgb(26, 23, 22, 0) 10%, rgb(236, 131, 131) 180%);
+        border-radius: 10%;
+        min-width: 50%;
+        max-height: 30%;
+    }
+    
+    .sign h3 {
+        margin-top: 60px;
+    }
+
+    
+}
+
+/* Tablette */
+@media all and (min-width: 767px) and (max-width: 991px) {
+    #back-color {
+        background-color: #171717;
+        color: white;
+    }
+    
+    .block {
+        font-family: 'Josefin Sans', sans-serif;
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        margin-top: 5%;
+    }
+
+    .sign {
+        text-align: center;
+    }
+
+    .about-text{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img {
+        margin-top: 2%;
+        max-width: 75%;
+    }
+
+    .corpus {
+        padding: 40px;
+        background-image: linear-gradient(to left, rgb(26, 23, 22, 0) 10%, rgb(236, 131, 131) 180%);
+        border-radius: 10%;
+        max-height: 30%;
+        max-width: 80%;
+        margin: 0 8%;
+    }
+
+    .about-text p {
+        text-align: center;
+    }
+
+}
+
+/* Mobile */
+@media (max-width:767px) {
+
+    #back-color {
+        background-color: #171717;
+        color: white;
+    }
+    
+    .block {
+        font-family: 'Josefin Sans', sans-serif;
+        position: absolute;
+    }
+
+    h2 {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        margin-top: 5%;
+    }
+
+    .sign {
+        text-align: center;
+    }
+
+    .about-text{
+        margin-top: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    img {
+        margin-top: 2%;
+        max-width: 80%;
+        text-align: center;
+    }
+
+    .corpus {
+        padding: 40px;
+        background-image: linear-gradient(to left, rgb(26, 23, 22, 0) 10%, rgb(236, 131, 131) 180%);
+        border-radius: 10%;
+        min-width: 50%;
+        max-height: 30%;
+    }
+
+    .about-text p {
+        text-align: center;
+    }
+}

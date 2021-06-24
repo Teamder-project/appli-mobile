@@ -1,0 +1,112 @@
+#back-color {
+    padding: 3.125rem 0;
+    background-color: #171717;
+    color: white;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+}
+
+/* ==========================================================================
+    Responsive
+========================================================================== */
+
+/* PC */
+
+@media (min-width: 991px) {
+    .elements {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .container div {
+        flex-basis: 50%;
+    }
+    
+    button:hover {
+        opacity: 100%;
+    }
+    button {
+        width: 50%;
+        opacity: 30%;
+        position: relative;
+    }
+    
+    .profile-edit {
+        text-align: center;
+        display: inline-block;
+    }
+    #create {
+        margin-top: 5%;
+        position: relative;
+        display: inline-block;
+        width: auto;
+        padding: 2%;
+        border-radius: 56.25%;
+        text-align: center;
+    }
+}
+
+/* Tablette */
+
+@media all and (min-width: 767px) and (max-width: 991px) {
+
+    .elements {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .container div {
+        flex-basis: 50%;
+    }
+    button {
+        width: 50%;
+        opacity: 30%;
+        position: relative;
+    }
+    button:hover {
+        opacity: 100%;
+    }
+    .profile-edit {
+        text-align: center;
+        display: inline-block;
+    }
+    #create {
+        margin-top: 5%;
+        position: relative;
+        display: inline-block;
+        width: auto;
+        padding: 3%;
+        border-radius: 100%;
+        text-align: center;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:767px) {
+
+    button {
+        width: 50%;
+        opacity: 30%;
+        position: relative;
+    }
+
+    button:hover {
+        opacity: 100%;
+    }
+    
+    .profile-edit {
+        text-align: center;
+    }
+
+    #create {
+        margin-top: 5%;
+        position: relative;
+        display: inline-block;
+        width: auto;
+        padding: 3%;
+        border-radius: 56.25%;
+        text-align: center;
+    }
+}

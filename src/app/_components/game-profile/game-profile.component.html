@@ -1,0 +1,13 @@
+<div class="back-color">
+    <div class="container">
+        <div class="background" id="games">
+            <div class="game {{gameProfile.game.alias}}">
+                <h3>{{gameProfile.nickname_game}}</h3>
+            </div>
+        </div>
+            <div class="button-div">
+                <button id="edit" routerLink="/edit-profile/{{gameProfile.id}}">Modifier</button>
+                <button id="search" routerLink="/swipe/{{gameProfile.id}}">Rechercher</button>
+            </div>
+    </div>
+</div>

@@ -1,0 +1,69 @@
+.main{
+    color: white;
+    margin-top: 9%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    padding: 16px;
+    background: linear-gradient(to bottom, transparent 0%, rgb(6, 31, 75) 100%);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    display: block;
+    margin: 2%;
+    min-width: 160px;
+}
+
+button {
+    color: white;
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    background: transparent;
+    border: none;
+    text-align: right;
+}
+
+button:hover {
+    color:red;
+}
+
+.dropbtn {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: capitalize;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: all 0.2s ease-out;
+    text-shadow: 3px 3px 5px rgb(0, 0, 0);
+}
+
+.submit {
+    margin-top: 8%;
+    width: 0;
+    margin-left: 40%;
+    text-align: right;
+}
+
+/* Validation connexion*/
+.submit:hover {
+    color: rgb(151, 205, 50);
+}
+
+.login-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}

@@ -1,0 +1,34 @@
+{
+  "accounts": [
+    {
+      "id": 1,
+      "username": "username1",
+      "password": "password1",
+      "email": "email1",
+      "birthday": "01/01/01",
+      "gender": "gender1",
+      "country": "country1",
+      "avatar": "avatar1"
+    },
+    {
+      "id": 2,
+      "username": "username2",
+      "password": "password2",
+      "email": "email2",
+      "birthday": "02/02/02",
+      "gender": "gender2",
+      "country": "country2",
+      "avatar": "avatar2"
+    },
+    {
+      "id": 3,
+      "username": "username3",
+      "password": "password3",
+      "email": "email3",
+      "birthday": "03/03/03",
+      "gender": "gender3",
+      "country": "country3",
+      "avatar": "avatar3"
+    }
+  ]
+}

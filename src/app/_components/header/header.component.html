@@ -1,0 +1,53 @@
+<header id="header">
+
+    <div class="containermobile">
+        <div class="logo">
+            <a routerLink="/home"><img src="../../../assets/img/logo.png" alt="logo"></a>
+        </div>
+
+        <div id="dropdown-mobile" class="dropdown">
+            <button  (click)="dropdownMobile()" class="dropbtn">
+                <i class="fas fa-bars fa-2x"></i>
+            </button>
+            <div id="dropdown-content-mobile" class="dropdown-content">
+                <a routerLink="/about-us" (click)="hideDropdownMobile()">A Propos</a>
+                <a routerLink="/sign-in" (click)="hideDropdownMobile()">Inscription</a>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <div class="logo">
+            <a routerLink="/home"><img src="../../../assets/img/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="menu">
+            <div class="dropdown" (mouseover)="showDropdown()" (mouseleave)="hideDropdown()">
+                <button class="dropbtn">jeux </button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a routerLink="/league-of-legends" (click)="hideDropdown()">League of Legends</a>
+                    <a routerLink="/rocket-league" (click)="hideDropdown()">Rocket League</a>
+                    <a routerLink="/apex-legends" (click)="hideDropdown()">Apex</a>
+                    <a routerLink="/counter-strike" (click)="hideDropdown()">Counter Strike</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="more">
+            <a routerLink="/about-us">a propos</a>
+        </div>
+
+        <div class="login-dropdown">
+            <app-login></app-login>
+        </div>
+
+        <div class="chat-list" *ngIf="connected">
+            <a routerLink="/chat-list">Conversation</a>
+        </div>
+
+        <div id="signup" class="signup" *ngIf="!connected">
+            <a routerLink="/sign-in">inscription</a>
+        </div>
+
+    </nav>
+</header>

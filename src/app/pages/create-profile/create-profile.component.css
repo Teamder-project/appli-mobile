@@ -1,0 +1,76 @@
+#back-color {
+    background-color: #171717;
+    color: white;
+}
+
+.block {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(../../../assets/img/league-page.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    height: auto;
+    left: 0;
+    /* Préserve le ratio de l'image */
+    min-width: 100%;
+    min-height: 100%;
+    text-transform: capitalize;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+input {
+    width: 100%;
+    padding: 4%;
+}
+
+#error {
+    width:100%;
+}
+
+#error p {
+    color: red;
+}
+
+select {
+    padding: 15px;
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 45px;
+    background: linear-gradient(rgb(58, 83, 126) 40%, rgb(136, 39, 10) 100%);
+    border-radius: 22%;
+}
+
+.submit {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+button:hover {
+    color: red;
+    opacity: 100%;
+}
+
+label {
+    padding: 5px;
+}
+
+#pays {
+    margin-bottom: 25px;
+}

@@ -1,0 +1,17 @@
+<div (mouseover)="showLogin()" (mouseleave)="hideLogin()">
+    <div>
+     <button class="dropbtn" (click)="logOut()">{{label}}</button>
+    </div>
+    <div id="login-content" class="login-content">
+        <div class="main">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                <label for="email">email</label>
+                <input id="email" type="text" formControlName="email" (focus)="focus()" (focusout)="focusOut()">
+                <label for="password">mot de passe</label>
+                <input id="password" type="password" formControlName="password" (focus)="focus()" (focusout)="focusOut()">
+        
+                <button class="submit" type="submit">valider</button>
+            </form>
+        </div>
+    </div>
+</div>

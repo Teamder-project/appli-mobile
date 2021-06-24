@@ -1,0 +1,66 @@
+<div id="fullscreen">
+  <div class="full">
+
+    <div class="retour">
+      <button routerLink="/index" class="bouton">Retour</button>
+      <button (click)="trigerFullScreen()" id="button" class="bouton">&#8862;</button>
+    </div>
+
+    <div class="swiper-container">
+
+      <div class="swiper-wrapper">
+
+        <div id="swipe1" class="swiper-slide">
+          <!-- card qui indique que le swipe a été positif-->
+          <div class="container">
+
+            <div class="card_transition_oui">
+              <div class="image_oui">
+                <img src="../../../assets/img/YES.jpg" alt="oui">
+                <div class="texte_oui">
+                  <h1>YES, WE PLAY !</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="swipe2" class="swiper-slide">
+
+          <!-- carte active avec l'affichage du profil -->
+          <div class="container">
+
+            <div class="card">
+              <div class="entete">
+                <img src="../../../assets/img/cat.jpg" alt="Person" class="card_image">
+                <p id="nom-prenom" class="joueur"></p>
+              </div>
+              <div class="infos_joueur">
+                <p class="description">Coucou toi le joueur ! </p>
+                <p class="notation">Et si on jouait ensemble ?</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="swipe3" class="swiper-slide">
+
+          <div class="container">
+            <!-- card qui indique que le swipe a été négatif-->
+            <div class="card_transition_non">
+              <div class="image_non">
+                <img src="../../../assets/img/NO.jpg" alt="non">
+                <div class="texte_non">
+                  <h1>No thanks !</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  </div>
+</div>

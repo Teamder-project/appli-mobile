@@ -1,0 +1,7 @@
+{
+    "name": "teamder-front",
+    "integrations": {
+      "capacitor": {}
+    },
+    "type": "angular"
+  }

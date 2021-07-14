@@ -1,205 +1,68 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
-
-/* ==========================================================================
-    Responsive
-========================================================================== */
-
-/* PC */
-
-@media (min-width: 991px) {
-  #back-color {
-    background-color: #171717;
-    color: white;
-  }
-  .block {
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url("../../../assets/img/rocket-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    height: auto;
-    top: 70px;
-    left: 0;
-    /* Préserve le ratio de l'image */
-    min-width: 100%;
-    min-height: 100%;
-  }
-  h2 {
-    margin-top: 8%;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  
-  p {
-    left: 0;
-    right: 0;
-    padding: 45px;
-    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 30%, rgb(50, 121, 78) 190%);
-    border-radius: 33%;
-    width: 80%;
-  }
-  .rl-text {
-    width: 40%;
-  }
-  .rl-text p {
-    font-size: 20px;
-    margin-bottom: 50px;
-    color: white;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-  .rl-text a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-  a {
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 15px;
-    background: linear-gradient(to left, rgba(43, 209, 93, 0.5) 20%, rgb(10, 40, 92) 100%);
-    opacity: 90%;
-    color: white;
-    width: 25%;
-    margin: auto;
-  }
-  a:hover {
-    opacity: 100%;
-  }
+#back-color {
+  background-color: #171717;
+  color: white;
+  width: 100%;
 }
 
-/* Tablette */
-
-@media all and (min-width: 767px) and (max-width: 991px) {
-  #back-color {
-    background-color: #171717;
-    color: white;
-    
-  }
-  .block {
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url("../../../assets/img/rocket-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    height: auto;
-    top: 70px;
-    left: 0;
-    /* Préserve le ratio de l'image */
-    min-width: 100%;
-    min-height: 100%;
-  }
-  h2 {
-    margin-top: 8%;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  p {
-    left: 0;
-    right: 0;
-    padding: 45px;
-    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 30%, rgb(50, 121, 78) 190%);
-    border-radius: 33%;
-    width: 80%;
-  }
-  .rl-text {
-    width: 60%;
-  }
-  .rl-text p {
-    font-size: 20px;
-    margin-bottom: 50px;
-    color: white;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-  .rl-text a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-  a {
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 15px;
-    background-color: #358b60;
-    opacity: 80%;
-    color: white;
-    width: 25%;
-    margin: auto;
-  }
-  a:hover {
-    background-color: #358b60;
-    opacity: 100%;
-  }
+.block {
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url("../../../assets/img/rocket-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: auto;
+  left: 0;
+  /* Préserve le ratio de l'image */
+  min-width: 100%;
+  min-height: 100%;
 }
 
-/* Mobile */
-
-@media (max-width:767px) {
-  #back-color {
-    background-color: #171717;
-    color: white;
-  }
-  .block {
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url("../../../assets/img/rocket-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    height: auto;
-    top: 70px;
-    left: 0;
-    /* Préserve le ratio de l'image */
-    min-width: 100%;
-    min-height: 100%;
-  }
-  h2 {
-    margin-top: 8%;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  p {
-    left: 0;
-    right: 0;
-    padding: 45px;
-    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 30%, rgb(50, 121, 78) 190%);
-    border-radius: 33%;
-    width: 80%;
-  }
-  .rl-text {
-    width: 100%;
-  }
-  .rl-text p {
-    font-size: 20px;
-    margin-bottom: 50px;
-    color: white;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-  .rl-text a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-  a {
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 15px;
-    background-color: #358b60;
-    opacity: 80%;
-    color: white;
-    width: 25%;
-    margin: auto;
-  }
-  a:hover {
-    background-color: #358b60;
-    opacity: 100%;
-  }
+h2 {
+  margin-top: 10%;
+  color: white;
+  text-transform: uppercase;
+  width: 95%;
+  text-align: center;
 }
+
+p {
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 30%, rgb(50, 121, 78) 190%);
+  border-radius: 33%;
+  width: 100%;
+}
+
+.rl-text {
+  width: 100%;
+}
+
+.rl-text p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: white;
+  margin-top: 30px;
+}
+
+.rl-text a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #358b60;
+  opacity: 80%;
+  color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 32px;
+}
+
 

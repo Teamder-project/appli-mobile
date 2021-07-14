@@ -1,70 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
-
-
-
-/* Mobile */
-
-@media (max-width:767px) {
-  #back-color {
-    background-color: #171717;
-    color: white;
-    width: 100%;
-  }
-  .block {
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url("../../../assets/img/league-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    height: auto;
-    top: 70px;
-    left: 0;
-    /* Préserve le ratio de l'image */
-    min-width: 100%;
-    min-height: 100%;
-  }
-  h2 {
-    margin-top: 8%;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  p {
-    left: 0;
-    right: 0;
-    padding: 45px;
-    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 10%, rgb(26, 82, 104) 190%);
-    border-radius: 33%;
-    width: 80%;
-  }
-  .lol-text {
-    width: 100%;
-  }
-  .lol-text p {
-    font-size: 20px;
-    margin-bottom: 50px;
-    color: white;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-  .lol-text a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-  a {
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 15px;
-    background-color: #527596;
-    opacity: 80%;
-    color: white;
-    width: 25%;
-    margin: auto;
-  }
-  a:hover {
-    background-color: #527596;
-    opacity: 100%;
-  }
+#back-color {
+  background-color: #171717;
+  color: white;
+  width: 100%;
 }
+
+.block {
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url("../../../assets/img/league-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  height: auto;
+  left: 0;
+  /* Préserve le ratio de l'image */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+h2 {
+  margin-top: 10%;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  width: 95%;
+}
+
+p {
+  text-align: center;
+  left: 0;
+  right: 0;
+  padding: 30px;
+  background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 10%, rgb(26, 82, 104) 190%);
+  border-radius: 33%;
+  width: 100%;
+}
+
+.lol-text {
+  width: 100%;
+}
+
+.lol-text p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: white;
+  margin-top: 30px
+}
+
+.lol-text a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #527596;
+  opacity: 80%;
+  color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 32px;
+}
+

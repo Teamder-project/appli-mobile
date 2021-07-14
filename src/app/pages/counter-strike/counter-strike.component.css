@@ -1,184 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
 
-/* ==========================================================================
-    Responsive
-========================================================================== */
-
-/* PC */
-
-@media (min-width: 991px) {
   #back-color {
     background-color: #171717;
     color: white;
+    width: 100%;
   }
   .block {
     font-family: 'Josefin Sans', sans-serif;
     background-image: url("../../../assets/img/counter-page.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    position: fixed;
+    position: absolute;
     height: auto;
-    top: 70px;
     left: 0;
     /* Préserve le ratio de l'image */
     min-width: 100%;
     min-height: 100%;
   }
   h2 {
-    margin-top: 8%;
+    margin-top: 10%;
     color: white;
     text-transform: uppercase;
     text-align: center;
+    width: 95%;
   }
+
   p {
     left: 0;
     right: 0;
-    padding: 45px;
+    padding: 30px;
     background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 30%, rgb(141, 141, 60) 190%);
     border-radius: 33%;
-    width: 80%;
-  }
-  .cs-text {
-    width: 40%;
-  }
-  .cs-text p {
-    font-size: 20px;
-    margin-bottom: 50px;
-    color: white;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-  .cs-text a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-  a {
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 15px;
-    background: linear-gradient(to left, rgba(221, 189, 45, 0.5) 20%, rgb(10, 40, 92) 100%);
-    opacity: 90%;
-    color: white;
-    width: 25%;
-    margin: auto;
-  }
-  a:hover {
-    opacity: 100%;
-  }
-}
-
-/* Tablette */
-
-@media all and (min-width: 767px) and (max-width: 990px) {
-  #back-color {
-    background-color: #171717;
-    color: white;
-    
-  }
-  .block {
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url("../../../assets/img/counter-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    height: auto;
-    top: 70px;
-    left: 0;
-    /* Préserve le ratio de l'image */
-    min-width: 100%;
-    min-height: 100%;
-  }
-  h2 {
-    margin-top: 8%;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  p {
-    left: 0;
-    right: 0;
-    padding: 45px;
-    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 30%, rgb(141, 141, 60) 190%);
-    border-radius: 33%;
-    width: 80%;
-  }
-  .cs-text {
-    width: 60%;
-  }
-  .cs-text p {
-    font-size: 20px;
-    margin-bottom: 50px;
-    color: white;
-    margin-top: 80px;
-    margin-left: 40px;
-  }
-  .cs-text a {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-  a {
-    text-decoration: none;
-    border: 1px solid black;
-    padding: 15px;
-    background-color: #807227;
-    opacity: 80%;
-    color: white;
-    width: 25%;
-    margin: auto;
-  }
-  a:hover {
-    background-color: #807227;
-    opacity: 100%;
-  }
-}
-
-/* Mobile */
-
-@media (max-width:767px) {
-  #back-color {
-    background-color: #171717;
-    color: white;
-  }
-  .block {
-    font-family: 'Josefin Sans', sans-serif;
-    background-image: url("../../../assets/img/counter-page.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    height: auto;
-    top: 70px;
-    left: 0;
-    /* Préserve le ratio de l'image */
-    min-width: 100%;
-    min-height: 100%;
-  }
-  h2 {
-    margin-top: 8%;
-    color: white;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  p {
-    left: 0;
-    right: 0;
-    padding: 45px;
-    background-image: linear-gradient(to right, rgb(26, 23, 22, 0) 30%, rgb(141, 141, 60) 190%);
-    border-radius: 33%;
-    width: 80%;
+    width: 100%;
   }
   .cs-text {
     width: 100%;
   }
   .cs-text p {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 50px;
     color: white;
-    margin-top: 80px;
-    margin-left: 40px;
+    margin-top: 30px;
   }
   .cs-text a {
     display: flex;
@@ -189,15 +50,11 @@
   a {
     text-decoration: none;
     border: 1px solid black;
-    padding: 15px;
+    padding: 10px;
     background-color: #807227;
     opacity: 80%;
     color: white;
-    width: 25%;
+    width: 50%;
     margin: auto;
+    border-radius: 32px;
   }
-  a:hover {
-    background-color: #807227;
-    opacity: 100%;
-  }
-}

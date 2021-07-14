@@ -1,3 +1,23 @@
+@media (max-width: 600px) {
+    #avatar-choisi {
+        width:75px;
+        height:75px;
+    }
+    form {
+        margin-top:30px;
+        padding: 30px;   
+    }
+}
+@media (min-width: 600px) {
+    #avatar-choisi {
+        width:100px;
+        height:100px;
+    }
+    form {
+        margin-top:30px;
+        padding:25px;   
+    }
+}
 #back-color {
     background-color: #171717;
     color: white;
@@ -5,10 +25,10 @@
   
 .block {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url(../../../assets/img/page-form.jpg);
+    background-color: #171717;
     background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed; 
+    background-size: cover; 
+    position: absolute;
     height: auto;
     left: 0; 
     /* Préserve le ratio de l'image */
@@ -22,33 +42,50 @@
 }
 
 #error p {
-    color:red;
+    text-align:center;
+    color:white;
 }
 .main{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
+    margin: 0 auto;
+    width:10%;
+    min-width:360px;    
 }
 
 input {
-    width: 100%;
+    width:100%;
+    margin-bottom:10px;
 }
 
 form{
-    width:25%;
     display: flex;
     flex-direction: column;
-    padding: 45px;
-    background: linear-gradient(rgb(58, 83, 126) 40%, rgb(136, 39, 10) 100%);
-    border-radius: 22%;
+    background: linear-gradient(rgba(223, 78, 59, 0.493) 20%, rgb(10, 40, 92) 100%);
+    border-radius: 12%;
 }
 
-.submit{
-    width: 150px;
+.avatar-btn, .return{
+    width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 2%;
+    border-radius: 1rem;
+}
+
+.submit {
+    width: 80%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 2%;
+    border-radius: 1rem;
 }
 
 button:hover {
@@ -62,4 +99,35 @@ label {
 
 #pays {
     margin-bottom: 25px;
+}
+
+#avatar-btn, #return {
+    width:40%;
+    align-self:center;
+}
+
+#div-img img {
+    width:75px;
+}
+#div-img button {
+    border:0;
+    padding:0;
+    margin:5px;
+}
+.hide {
+    display:none;
+}
+#div-img {
+    text-align:center;
+}
+#div-img button:hover {
+    transform: scale(1.2);
+}
+.flex {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+i {
+    margin-left:5px;
 }

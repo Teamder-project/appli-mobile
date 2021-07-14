@@ -58,14 +58,13 @@
     text-decoration: none;
     border: 1px solid black;
     padding: 15px;
-    background-color: #527596;
+    background: linear-gradient(to left, rgba(67, 214, 195, 0.5) 20%, rgb(10, 40, 92) 100%);
     opacity: 80%;
     color: white;
     width: 25%;
     margin: auto;
   }
   a:hover {
-    background-color: #527596;
     opacity: 100%;
   }
 }

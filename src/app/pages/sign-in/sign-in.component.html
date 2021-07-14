@@ -5,21 +5,50 @@
             <div id="error">
                 <p *ngFor="let error of error">{{error}}</p>
             </div>
-            <label for="username">pseudo</label>
-            <input type="text" formControlName="username">
-            <label for="password">mot de passe</label>
-            <input type="password" formControlName="password">
-            <label for="email">email</label>
-            <input type="text" formControlName="email">
-            <label for="birthday">date de naissance</label>
-            <input type="date" formControlName="birthday">
-            <label for="gender">sexe</label>
-            <input type="text" formControlName="gender">
-            <label for="country">pays</label>
-            <input type="text" formControlName="country" id="pays"> 
-            <div>
-            <button class="submit" type="submit">Enregistrer</button>
+            <div class="flex">
+                <button id="avatar-btn" class="avatar-btn" type="button" (click)="displayAvatar()">Avatar <i class="fas fa-edit"></i></button>
+                <button id="return" class="hide return" (click)="return()" type ="button">Retour</button>
+                <img id="avatar-choisi" class="hide" src="" alt="">
             </div>
+            <input id="hidden" type="hidden" value="" formControlName="avatar">
+            <div id="div-img" class="hide">
+                <button (click)="chooseAvatar('ahri')" type="button"><img src="../../../assets/avatars/ahri.jpg" alt="ahri"></button>
+                <button (click)="chooseAvatar('ak47-cs')" type="button"><img src="../../../assets/avatars/ak47-cs.jpg" alt="ak47-cs"></button>
+                <button (click)="chooseAvatar('bangalore')" type="button"><img src="../../../assets/avatars/bangalore.jpg" alt="bangalore"></button>
+                <button (click)="chooseAvatar('bloodhound')" type="button"><img src="../../../assets/avatars/bloodhound.jpg" alt="bloodhound"></button>
+                <button (click)="chooseAvatar('dragon-lore')" type="button"><img src="../../../assets/avatars/dragon-lore.jpg" alt="dragon-lore"></button>
+                <button (click)="chooseAvatar('ekko')" type="button"><img src="../../../assets/avatars/ekko.jpg" alt="ekko"></button>
+                <button (click)="chooseAvatar('guitar')" type="button"><img src="../../../assets/avatars/guitar.jpg" alt="guitar"></button>
+                <button (click)="chooseAvatar('katarina')" type="button"><img src="../../../assets/avatars/katarina.jpg" alt="katarina"></button>
+                <button (click)="chooseAvatar('map-cs')" type="button"><img src="../../../assets/avatars/map-cs.jpg" alt="map-cs"></button>
+                <button (click)="chooseAvatar('masamune')" type="button"><img src="../../../assets/avatars/masamune.jpg" alt="masamune"></button>
+                <button (click)="chooseAvatar('mirage')" type="button"><img src="../../../assets/avatars/mirage.jpg" alt="mirage"></button>
+                <button (click)="chooseAvatar('multicolor-cs')" type="button"><img src="../../../assets/avatars/multicolor-cs.jpg" alt="multicolor-cs"></button>
+                <button (click)="chooseAvatar('octane-rl')" type="button"><img src="../../../assets/avatars/octane-rl.jpg" alt="octane-rl"></button>
+                <button (click)="chooseAvatar('octane')" type="button"><img src="../../../assets/avatars/octane.jpg" alt="octane"></button>
+                <button (click)="chooseAvatar('pathfinder')" type="button"><img src="../../../assets/avatars/pathfinder.jpg" alt="pathfinder"></button>
+                <button (click)="chooseAvatar('teemo')" type="button"><img src="../../../assets/avatars/teemo.jpg" alt="teemo"></button>
+                <button (click)="chooseAvatar('trainee-rl')" type="button"><img src="../../../assets/avatars/trainee-rl.jpg" alt="trainee-rl"></button>
+                <button (click)="chooseAvatar('yasuo')" type="button"><img src="../../../assets/avatars/yasuo.jpg" alt="yasuo"></button>
+            </div>
+            <div id="form">
+                <label for="username">pseudo</label>
+                <input type="text" formControlName="username">
+                <label for="password">mot de passe</label>
+                <input type="password" formControlName="password">
+                <label for="email">email</label>
+                <input type="text" formControlName="email">
+                <label for="birthday">date de naissance</label>
+                <input type="date" formControlName="birthday">
+                <label for="gender">sexe</label>
+                <input type="text" formControlName="gender">
+                <label for="country">pays</label>
+                <input type="text" formControlName="country" id="pays"> 
+                <div>
+                <button class="submit" type="submit">Enregistrer</button>
+                </div>
+            </div>
+            
         </form>
     </div>
 </div>

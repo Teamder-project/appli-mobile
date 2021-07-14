@@ -1,0 +1,24 @@
+<ion-content>
+
+    <div class="logo">
+        <a routerLink="/home"><img src="../../../assets/img/image0.png" alt="logo"></a>
+    </div>
+
+    <div class="padding">
+        
+        <input color="light" type="mail" placeholder="Adresse Mail">
+     
+        <input color="light" type="password" placeholder="Mot de passe">
+
+        <ion-button id="forget" color="light" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
+
+        <div class="auth">
+            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <ion-button class="submit" type="submit" color="light" expand="block" shape="round">Connexion</ion-button>
+            <br>
+            <ion-button routerLink="/sign-in" color="dark" expand="block" shape="round">Inscription</ion-button>
+        </form>
+        </div>
+    </div>
+
+</ion-content>

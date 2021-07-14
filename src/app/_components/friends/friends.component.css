@@ -9,3 +9,9 @@
 .friends p, .friends h4 {
     color:white;
 }
+
+button {
+    display: flex;
+    background-color: transparent;
+    border: none;
+}

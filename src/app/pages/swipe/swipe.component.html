@@ -1,5 +1,5 @@
 <div id="fullscreen">
-  <div class="full">
+  <div class="full {{alias}}">
 
     <div class="retour">
       <button routerLink="/index" class="bouton">Retour</button>
@@ -32,12 +32,12 @@
 
             <div class="card">
               <div class="entete">
-                <img src="../../../assets/img/cat.jpg" alt="Person" class="card_image">
+                <img id="avatar" src="../../../assets/avatars/.jpg" alt="Person" class="card_image">
                 <p id="nom-prenom" class="joueur"></p>
               </div>
               <div class="infos_joueur">
-                <p class="description">Coucou toi le joueur ! </p>
-                <p class="notation">Et si on jouait ensemble ?</p>
+                <p id="objectif"></p>
+                <p id="description"></p>
               </div>
             </div>
           </div>

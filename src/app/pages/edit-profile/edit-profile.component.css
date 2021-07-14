@@ -5,7 +5,7 @@
 
 .block {
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url(../../../assets/img/league-page.jpg);
+    background: #171717;
     background-repeat: no-repeat;
     background-size: cover;
     position: fixed;
@@ -15,53 +15,66 @@
     min-width: 100%;
     min-height: 100%;
     text-transform: capitalize;
+    
 }
 
 .main {
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 32px;
 }
 
 input {
     width: 100%;
     padding: 4%;
+    margin-bottom: 5%;
 }
 
 #error p {
-    color: red;
+    color: white;
 }
 
 select {
-    padding: 15px;
+    padding: 15px 6px;
+    margin-bottom: 5%;
 }
 
 textarea {
     resize: none;
-    height: 100px;
-    margin-bottom: 20px;
+    width: 250px;
+    height: 120px;
+    margin-bottom: 10%;
+    border-radius: 12%;
+    padding: 6%;
+    
 }
 
 form {
     display: flex;
     flex-direction: column;
+    margin-top: 35px;
     padding: 45px;
-    background: linear-gradient(rgb(58, 83, 126) 40%, rgb(136, 39, 10) 100%);
-    border-radius: 22%;
+    background: linear-gradient(rgba(223, 78, 59, 0.493) 20%, rgb(10, 40, 92) 100%);
+    border-radius: 12%;
 }
 
 .submit {
-    width: 150px;
+    width: 80%;
+    margin: auto;
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: auto;
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 2%;
+    border-radius: 1rem;
 }
 
 button:hover {
     color: red;
     opacity: 100%;
-}
+  }
 
 label {
     padding: 5px;

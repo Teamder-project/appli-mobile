@@ -1,261 +1,96 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap');
-/* ==========================================================================
-    Responsive
-========================================================================== */
-
-/* PC */
-
-@media (min-width: 991px) {
-    header img {
-        width: 50px;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-        height: 70px;
-    }
-    .logo {
-        margin-left: 20px;
-    }
-    .menu {
-        margin-left: 5%;
-    }
-    .more {
-        margin-left: 5%;
-    }
-    .login-dropdown {
-        margin-left: 40%;
-    }
-    .login-content {
-        display: none;
-        position: absolute;
-        z-index: 1;
-    }
-    .signup {
-        margin-left: 5%;
-    }
-    i {
-        color: white;
-    }
-    header nav {
-        background: linear-gradient(rgba(10, 40, 92, 1) 90%, rgb(5, 21, 49) 100%);
-    }
-    header a, header .dropbtn {
-        font-size: 20px;
-        font-family: 'Josefin Sans', sans-serif;
-        text-transform: capitalize;
-        align-items: center;
-    }
-    header a {
-        text-decoration: none;
-        color: white;
-        transition: all 0.2s ease-out;
-        text-shadow: 3px 3px 5px rgb(0, 0, 0);
-    }
-    nav a:hover {
-        color: red;
-    }
-    /* Dropdown Button */
-    .dropbtn {
-        background: transparent;
-        color: white;
-        padding: 16px;
-        border: none;
-        text-shadow: 3px 3px 5px rgb(0, 0, 0);
-    }
-    .dropbtn:hover {
-        color: red;
-    }
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        min-width: 240px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        background: linear-gradient(to bottom, transparent 0%, #171717f1 30%);
-        padding: 10px;
-        pointer-events: auto;
-    }
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    .containermobile {
-        display: none;
-    }
-}
-
-/* Tablette */
-
-@media all and (min-width: 767px) and (max-width: 991px) {
-    header img {
-        width: 50px;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-    }
-    .logo {
-        margin-left: 5%;
-    }
-    .menu {
-        margin-left: 5%;
-    }
-    .more {
-        margin-left: 5%;
-    }
-    .login-dropdown {
-        margin-left: 20%;
-    }
-    .login-content {
-        display: none;
-        position: absolute;
-        z-index: 1;
-    }
-    .signup {
-        margin-left: 5%;
-    }
-    i {
-        color: white;
-    }
-    header nav {
-        background: linear-gradient(rgba(10, 40, 92, 1) 90%, rgb(5, 21, 49) 100%);
-        height: 70px;
-    }
-    header a, header .dropbtn {
-        font-size: 20px;
-        font-family: 'Josefin Sans', sans-serif;
-        text-transform: capitalize;
-        align-items: center;
-    }
-    header a {
-        text-decoration: none;
-        color: white;
-        transition: all 0.2s ease-out;
-        text-shadow: 3px 3px 5px rgb(0, 0, 0);
-    }
-    header a:hover {
-        color: red;
-    }
-    /* Dropdown Button */
-    .dropbtn {
-        background: transparent;
-        color: white;
-        padding: 16px;
-        border: none;
-        text-shadow: 3px 3px 5px rgb(0, 0, 0);
-
-    }
-    .dropbtn:hover {
-        color: red;
-    }
-    /* The container <div> - needed to position the dropdown content */
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-    /* Dropdown Content (Hidden by Default) */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        min-width: 240px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        background: linear-gradient(to bottom, transparent 0%, #171717f1 30%);
-        padding: 10px;
-        pointer-events: auto;
-    }
-    /* Links inside the dropdown */
-    .dropdown-content a {
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-    }
-    .containermobile {
-        display: none;
-    }
-}
-
 /* Mobile */
 
-@media (max-width:767px) {
-    header {
-        background-color: #171717;
-    }
-    header img {
-        width: 50px;
-    }
-    nav {
-        display: flex;
-        align-items: center;
-        display: none;
-    }
-    .containermobile {
-        display: flex;
-        justify-content: space-between;
-        background: linear-gradient(rgba(10, 40, 92, 1) 90%, rgb(5, 21, 49) 100%);
-        height: 70px;
-        align-items: center;
-    }
-    .logo {
-        margin-left: 3%;
-    }
-    .icon {
-        margin-right: 3%;
-    }
+header {
+    background-color: #171717;
+}
+
+header img {
+    width: 60px;
+}
+
+.containermobile {
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(rgba(10, 40, 92, 1) 90%, rgb(5, 21, 49) 100%);
+    height: 70px;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 3%;
+}
+
+.icon {
+    margin-right: 3%;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+}
+
+.dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    background: linear-gradient(#171717, #0a285c);
+    margin-top: 1%;
+    pointer-events: auto;
+    text-align: right;
+    float: right;
+    width: 275px;
+    right: 0;
     
-    button {
-        background-color: transparent;
-        border: none;
-    }
+}
 
-    .dropbtn {
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none;
-        cursor: pointer;
-   
-    }
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
+.dropdown-content a {
+    color: white;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 18px;
+    border-bottom: #171717 1px solid;
+    margin-right: 1%;
+}
 
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        background: linear-gradient(to bottom, transparent 0%, rgb(6, 31, 75) 100%);
-        padding: 10px;
-        pointer-events: auto;
-        margin-top: 18%;
-        text-align: left;
-        width: 150px;
-        right: 0; left: auto;
-    }
+.about {
+    float: right;
+    margin-left: 10%;
+}
 
-    .dropdown-content a {
-        color: white;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;  
-    }
-    
-    .dropdown a:hover {
-        color: red;
-    }
-   
-    .show {
-        display: block;
-    }
+.log {
+    float: right;
+    margin-left: 10%;
+    margin-right: 1.2%;
+}
+
+.chat {
+    float: right;
+    margin-left: 10%;
+}
+
+
+.dropdown a:hover {
+    color: red;
+}
+
+.show {
+    display: block;
 }

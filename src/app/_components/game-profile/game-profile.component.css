@@ -21,13 +21,29 @@
 /* PC */
 
 @media (min-width: 991px) {
+    .grayscale div {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .grayscale div:hover {
+        -webkit-transform: scale(1);
+        transform: scale(1.03);
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
 
     h3 {
         padding: 4%;
         background: linear-gradient(transparent 0%, rgb(20, 21, 24) 100%);
         display: inline-block;
     }
-
     #games {
         display: flex;
         flex-direction: column;
@@ -38,7 +54,6 @@
         position: relative;
         overflow: hidden;
     }
-
     #games .game {
         min-height: 100%;
         min-width: 100%;
@@ -47,26 +62,39 @@
         position: absolute;
         background-size: cover;
     }
-
     .game {
         margin-top: 5%;
         background-size: cover;
+        position: relative;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .button-div {
+        position: absolute; 
+        margin: 0;
+        bottom: 0;
+        margin-bottom: 5%;
+        width: 100%;
     }
 
     .button-div button {
         width: 50%;
-        opacity: 30%;
-        position: relative;
+        bottom: 0;
+        opacity: 0.5;
+        margin: 0;
+        padding: 0.5%;
     }
 
     .button-div button:hover {
-        opacity: 100%;
+        opacity: 70%;
     }
 
     .profile-edit {
         text-align: center;
     }
-
     #create {
         margin-top: 5%;
         position: relative;
@@ -76,18 +104,34 @@
         border-radius: 56.25%;
         text-align: center;
     }
-
 }
 
 /* Tablette */
+
 @media all and (min-width: 767px) and (max-width: 991px) {
 
+    .grayscale div {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out;
+    }
+
+    .grayscale div:hover {
+        -webkit-transform: scale(1);
+        transform: scale(1.02);
+        -webkit-filter: grayscale(0);
+        filter: grayscale(0);
+    }
     h3 {
         padding: 4%;
         background: linear-gradient(transparent 0%, rgb(20, 21, 24) 100%);
         display: inline-block;
     }
-
     #games {
         display: flex;
         flex-direction: column;
@@ -98,7 +142,6 @@
         position: relative;
         overflow: hidden;
     }
-
     #games .game {
         min-height: 100%;
         min-width: 100%;
@@ -107,26 +150,37 @@
         position: absolute;
         background-size: cover;
     }
-
     .game {
         margin-top: 5%;
         background-size: cover;
     }
+    .container {
+        position: relative;
+        width: 100%;
+    }
+
+    .button-div {
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        margin-bottom: 5%;
+        width: 100%;
+    }
 
     .button-div button {
         width: 50%;
-        opacity: 30%;
-        position: relative;
+        bottom: 0;
+        opacity: 0.5;
+        margin: 0;
+        padding: 0.5%;
     }
 
     .button-div button:hover {
-        opacity: 100%;
+        opacity: 70%;
     }
-
     .profile-edit {
         text-align: center;
     }
-
     #create {
         margin-top: 5%;
         position: relative;
@@ -143,15 +197,33 @@
 @media (max-width:767px) {
 
     .container {
-        width: 90%;
+        position: relative;
     }
 
+    .button-div {
+        position: absolute;
+        margin: 0;
+        bottom: 0;
+        margin-bottom: 5%;
+        width: 100%;
+    }
+
+    .button-div button {
+        width: 50%;
+        bottom: 0;
+        opacity: 0.5;
+        margin: 0;
+        padding: 0.5%;
+    }
+
+    .button-div button:hover {
+        opacity: 70%;
+    }
     h3 {
         padding: 4%;
         background: linear-gradient(transparent 0%, rgb(20, 21, 24) 100%);
         display: inline-block;
     }
-
     #games {
         display: flex;
         flex-direction: column;
@@ -162,7 +234,6 @@
         position: relative;
         overflow: hidden;
     }
-
     #games .game {
         min-height: 100%;
         min-width: 100%;
@@ -171,26 +242,21 @@
         position: absolute;
         background-size: cover;
     }
-
     .game {
         margin-top: 5%;
         background-size: cover;
     }
-
     .button-div button {
         width: 50%;
         opacity: 30%;
         position: relative;
     }
-
     .button-div button:hover {
         opacity: 100%;
     }
-
     .profile-edit {
         text-align: center;
     }
-
     #create {
         margin-top: 5%;
         position: relative;

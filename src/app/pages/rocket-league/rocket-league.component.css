@@ -30,6 +30,7 @@
     text-transform: uppercase;
     text-align: center;
   }
+  
   p {
     left: 0;
     right: 0;
@@ -58,14 +59,13 @@
     text-decoration: none;
     border: 1px solid black;
     padding: 15px;
-    background-color: #358b60;
-    opacity: 80%;
+    background: linear-gradient(to left, rgba(43, 209, 93, 0.5) 20%, rgb(10, 40, 92) 100%);
+    opacity: 90%;
     color: white;
     width: 25%;
     margin: auto;
   }
   a:hover {
-    background-color: #358b60;
     opacity: 100%;
   }
 }

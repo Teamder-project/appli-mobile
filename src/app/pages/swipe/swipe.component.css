@@ -4,9 +4,23 @@
   #fullscreen:fullscreen {
     background-color: transparent;
   }
+
+  .rl {
+    background-image: url("../../../assets/img/rocket-page.jpg");
+  }
+  .lol {
+    background-image: url("../../../assets/img/league-page.jpg");
+  }
+  .apex {
+    background-image: url("../../../assets/img/apex-page.jpg");
+  }
+  .csgo {
+    background-image: url("../../../assets/img/counter-page.jpg");
+  }
+
 .full {
   
-  background: url("../../../assets/img/rocket-page.jpg") center;
+  background-position: center;
   position: fixed; 
    /* Préserve le ratio de l'image */
    min-width: 100%;
@@ -99,6 +113,7 @@
   font-size: small;
   border-color : white;
   border-width: 5px;
+  max-width: 45vw;
 }
 
 .entete {
@@ -206,9 +221,10 @@
   margin: 2vh 2vh 0 2vh;
   box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.226);
   font-size: 3vh;
+  padding: 2vh 2vw;
 }
 
-.description {
+#description, #objectif {
   margin-top: 10px;
 }
 
@@ -249,9 +265,21 @@
   #fullscreen:fullscreen {
     background-color: transparent;
   }
+  .rl {
+    background-image: url("../../../assets/img/rocket-page.jpg");
+  }
+  .lol {
+    background-image: url("../../../assets/img/league-page.jpg");
+  }
+  .apex {
+    background-image: url("../../../assets/img/apex-page.jpg");
+  }
+  .csgo {
+    background-image: url("../../../assets/img/counter-page.jpg");
+  }
   .full {
   
-  background: url("../../../assets/img/league-page.jpg") center;
+  background-position: center;
   position: fixed; 
    /* Préserve le ratio de l'image */
    min-width: 100vw;
@@ -493,9 +521,21 @@
   #fullscreen:fullscreen {
     background-color: transparent;
   }
+  .rl {
+    background-image: url("../../../assets/img/rocket-page.jpg");
+  }
+  .lol {
+    background-image: url("../../../assets/img/league-page.jpg");
+  }
+  .apex {
+    background-image: url("../../../assets/img/Apex-mobile-page.jpg");
+  }
+  .csgo {
+    background-image: url("../../../assets/img/counter-page.jpg");
+  }
   .full {
   
-    background: url("../../../assets/img/background-mobile/league-background.jpg") center;
+    background-position: center;
     position: fixed; 
    
      /* Préserve le ratio de l'image */
@@ -690,7 +730,7 @@
     margin-top: 10px;
   }
   .infos_joueur {
-    background-color: rgba(255, 255, 255, 0.301);
+    background-color: rgba(137, 43, 226, 0.300);
     border-radius: 5mm;
     margin: 2vh 2vh 0 2vh;
     box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.226);

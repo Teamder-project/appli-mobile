@@ -7,8 +7,8 @@
 @media (min-width: 991px) {
     .block {
         padding: 3.125rem 0;
-        position: fixed; 
-    /* Préserve le ratio de l'image */
+        position: fixed;
+        /* Préserve le ratio de l'image */
         min-width: 100%;
         min-height: 100%;
     }
@@ -47,14 +47,19 @@
         background-image: linear-gradient(to bottom, rgb(23, 23, 23) 0%, rgba(23, 23, 23, 0) 70%);
         min-height: 30rem;
     }
+
+    .mobile {
+        display: none;
+    }
 }
 
 /* Tablette */
+
 @media all and (min-width: 767px) and (max-width: 991px) {
     .block {
         padding: 3.125rem 0;
-        position: fixed; 
-    /* Préserve le ratio de l'image */
+        position: fixed;
+        /* Préserve le ratio de l'image */
         min-width: 100%;
         min-height: 100%;
     }
@@ -93,28 +98,38 @@
         background-image: linear-gradient(to bottom, rgb(23, 23, 23) 0%, rgba(23, 23, 23, 0) 30%);
         min-height: 30rem;
     }
+
+    .mobile {
+        display: none;
+    }
 }
 
+
+
 /* Mobile */
+
 @media (max-width:767px) {
     .block {
         padding: 3.125rem 0;
         position: fixed;
-    /* Préserve le ratio de l'image */
+        /* Préserve le ratio de l'image */
         min-width: 100%;
         min-height: 100%;
     }
+    h2 {
+        text-align: center;
+        font-family: 'Josefin Sans', sans-serif;
+    }
     h4 {
-        margin-bottom: 60px;
-        margin-left: 60px;
+        font-family: 'Josefin Sans', sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 5%;
+        text-align: center;
     }
     #back-color {
         background-color: #171717;
         color: white;
-    }
-    #back-color h2 {
-        color: white;
-        margin-left: 60px;
     }
     #backVideo {
         width: 100%;
@@ -138,5 +153,63 @@
         right: 0;
         background-image: linear-gradient(to bottom, rgb(23, 23, 23) 0%, rgba(23, 23, 23, 0) 30%);
         min-height: 30rem;
+    }
+    .games {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        position: relative;
+        margin: 5%;
+    }
+    .games2 {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        margin: 5%;
+        position: relative;
+    }
+    a {
+        text-align: center;
+        border-radius: 32px;
+    }
+    .lol a {
+        text-decoration: none;
+        border: 1px solid white;
+        width: 200px;
+        padding: 15px;
+        background: #171717;
+        opacity: 80%;
+        color: white;
+        float: left;
+    }
+    .rl a {
+        text-decoration: none;
+        border: 1px solid white;
+        width: 200px;
+        padding: 15px;
+        background: #171717;
+        opacity: 80%;
+        color: white;
+        float: right;
+    }
+    .apex a {
+        text-decoration: none;
+        border: 1px solid white;
+        width: 200px;
+        padding: 15px;
+        background: #171717;
+        opacity: 80%;
+        color: white;
+        float: left;
+    }
+    .cs a {
+        text-decoration: none;
+        border: 1px solid white;
+        width: 200px;
+        padding: 15px;
+        background: #171717;
+        opacity: 80%;
+        color: white;
+        float: right;
     }
 }

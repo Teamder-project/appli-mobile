@@ -13,11 +13,10 @@ h2 {
     font-family: 'Josefin Sans', sans-serif;
 }
 
-h4 {
+h3 {
     font-family: 'Josefin Sans', sans-serif;
     display: flex;
     justify-content: center;
-    padding: 5%;
     text-align: center;
 }
 

@@ -10,8 +10,7 @@ import { GamerService } from 'src/app/services/gamer.service';
 @Component({
   selector: 'app-chat',
   templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.css'],
-  encapsulation:ViewEncapsulation.None
+  styleUrls: ['./chat.component.css']
 })
 export class ChatComponent implements OnInit, OnDestroy {
   private idFriend: number;
@@ -125,12 +124,12 @@ export class ChatComponent implements OnInit, OnDestroy {
     if(message.sender.id == Number(localStorage.getItem("id"))){
       document.getElementById(String(message.receiver.id)).innerHTML += 
       // Remplacer par une balise contenant le message envoyé par l'utilisateur connecté
-      "<p class=envoyeur>"+ message.message+"</p>";
+      "<p class=envoyeur style= \"background-color: lightgrey; border-radius: 32px; color: #171717; font-size: 16px; padding: 4px 18px; display: inline; text-align: center; font-family: 'Josefin Sans', sans-serif; align-self: flex-end; margin: 1px;\">"+ message.message+"</p>";
     }
     else{
       document.getElementById(String(message.sender.id)).innerHTML += 
         // Remplacer par une balise contenant le message envoyé par l'ami
-        "<p class=receveur>"+ message.message+"</p>"
+        "<p class=receveur style= \"background-color: lightgrey; border-radius: 32px; color: #171717; font-size: 16px; padding: 4px 18px; display: inline; text-align: center; font-family: 'Josefin Sans', sans-serif; align-self: flex-start; margin: 1px; text-align: left;\">"+ message.message+"</p>";
     }
     this.scrollBottom();
   }

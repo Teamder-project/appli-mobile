@@ -12,7 +12,7 @@
             <div id="dropdown-content-mobile" class="dropdown-content">
                 <a routerLink="/about-us" (click)="hideDropdownMobile()">A Propos 
                     <div class="about"><i class="fas fa-users fa-lg"></i></div></a>
-                <a routerLink="/auth" (click)="hideDropdownMobile()">Connexion
+                    <a (click)="loginMobile()">{{label}}
                     <div class="log"> <i class="fas fa-user-circle fa-lg"></i></div></a>
                 <a *ngIf="connected" routerLink="/chat" (click)="hideDropdownMobile()">Conversation
                     <div class="chat"> <i class="far fa-comments fa-lg"></i></div></a>

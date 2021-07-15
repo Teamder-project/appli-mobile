@@ -3,7 +3,7 @@ import { Gamer } from "./Gamer";
 export class FriendChat {
     id : number
     message : string;
-    date : string;
+    time : string;
     sender : Gamer;
     receiver : Gamer; 
 

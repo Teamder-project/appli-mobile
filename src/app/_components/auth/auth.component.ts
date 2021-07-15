@@ -28,8 +28,6 @@ export class AuthComponent implements OnInit {
     console.log(this.loginForm.value)
     this.service.login(this.loginForm.value).subscribe(data => {
       localStorage.setItem("id", data);
-      document.getElementById("email")["value"] = "";
-      document.getElementById("password")["value"] = "";
       this.loginForm.value.email = "";
       this.loginForm.value.password = "";
       this.router.navigate(["index"]);

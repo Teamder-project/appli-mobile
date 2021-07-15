@@ -81,7 +81,7 @@ button {
     margin-right: 1.2%;
 }
 
-.chat {
+.conv {
     float: right;
     margin-left: 10%;
 }
@@ -93,4 +93,8 @@ button {
 
 .show {
     display: block;
+}
+
+a {
+    cursor: pointer;
 }

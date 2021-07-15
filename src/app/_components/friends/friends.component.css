@@ -1,17 +1,45 @@
-.friends {
-    display:flex;
-    align-items: center;
+p {
+    font-family: 'Josefin Sans', sans-serif;
 }
+
+
+
+.friends button {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+}
+
 .friends img {
-    width:50px;
-    margin:20px;
+    width: 30px;
+    margin-right: 5%;
 }
-.friends p, .friends h4 {
-    color:white;
+
+.friends p {
+    color: white;
+}
+
+.friends h4 {
+    color: white;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 button {
-    display: flex;
     background-color: transparent;
     border: none;
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+.nom {
+    align-self: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+hr {
+    color: white;
+    margin: 5px auto;
 }

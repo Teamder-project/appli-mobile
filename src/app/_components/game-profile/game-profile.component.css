@@ -16,8 +16,13 @@
 
 /* Mobile */
 
+.back-color {
+    width: 95%;
+}
+
 .container {
     position: relative;
+    margin-bottom: 5%;
 }
 
 .button-div {

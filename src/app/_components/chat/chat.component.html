@@ -1,39 +1,41 @@
-<meta charset="utf-8">
+<ion-content><meta charset="utf-8">
 
 <main class="chat">
-
-
     <div class="container">
 
         <div class="chat-content">
 
-            <div class="side-panel">
+            <div id="side-panel" class="side-panel">
                 <h4>Liste d'amis</h4>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item" *ngFor="let friend of friends">
-                      <div class="receiver-button"><button><span>{{friend.pseudo}}</span> </button> </div>
-                        <hr>
+                        <app-friends [friend]="friend" (click)="clickFriends(friend.id)"></app-friends>
                     </li>
                 </ul>
             </div>
 
 
-            <div class="card">
-                <ul class="list-group list-group-flush">
+            <div id="card" class="card h-100">
+                <div class="list-group list-group-flush display-none" id="{{friend.id}}" attr.data-username="{{friend.username}}" *ngFor="let friend of friends">
                     
-                </ul>
+                </div>
             </div>
         </div>
-        <form (ngSubmit)="send()">
+        <form id="formMessage" (ngSubmit)="send()">
             <div class="chat-send row">
 
-                <div class="col-8">
+                <div (click)="displayFriends()" id="icone" class="col-2 display-friends" style="display:block;">
+                    <i class="fas fa-user-friends"></i>
+                </div>
+                <div class="col-6">
                     <input type="text" class="form-control" name="message" id="input-message" ngModel>
                 </div>
                 <div class="col-2">
-                    <button type="submit" class="btn btn-light">Envoyer</button>
+                    <button type="submit" class="btn btn-light submit-pc">Envoyer</button>
+                    <button type="submit" class="btn btn-light submit-mobile"><i class="far fa-paper-plane"></i></button>
                 </div>
             </div>
         </form>
     </div>
 </main>
+</ion-content>

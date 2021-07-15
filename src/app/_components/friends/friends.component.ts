@@ -10,7 +10,7 @@ export class FriendsComponent implements OnInit {
 
   @Input() friend;
   constructor(private service: GamerService) { 
-    this.service.getById(localStorage.getItem("id"));
+    this.service.getById(parseInt(localStorage.getItem("id")));
   }
 
   ngOnInit(): void {

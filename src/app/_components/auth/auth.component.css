@@ -1,22 +1,31 @@
-img {  
-    width: 100px;
+.block {
+    background: linear-gradient(#171717, #0a285c);
+    padding: 3.125rem 0;
+    position: fixed;
+    /* Préserve le ratio de l'image */
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .logo {
-    margin-top: 20%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width: 90px;
 }
 
 .padding {
-    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
 
-ion-content {
-    --ion-background-color: linear-gradient(#171717, #0a285c);
+.email {
+    margin-top: 20%;
+    width: 100%;
 }
 
 input {
@@ -31,11 +40,13 @@ input {
 }
 
 #forget {
-    font-size: 10px;
+    font-size: 12px;
     float: right;
-    margin-right: 4%;
+    margin-left: 20%;
     margin-top: 0;
     color: white;
+    background-color: transparent;
+    border: none;
     font-family: 'Josefin Sans', sans-serif;
     font-style: italic;
 }
@@ -43,13 +54,35 @@ input {
 .auth {
     margin-top: 15%;
     display: inline-block;
+    text-align: center;
 }
 
 input:focus::placeholder {
     color: transparent;
-  }  
-
-form {
-    text-align: center;
 }
 
+.submit {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    color: #171717;
+    border: none;
+    padding: 2%;
+    border-radius: 1rem;
+}
+
+.signup {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #171717;
+    color: white;
+    border: none;
+    padding: 2%;
+    border-radius: 1rem;
+}

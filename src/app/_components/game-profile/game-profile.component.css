@@ -14,256 +14,87 @@
     background-image: url("../../../assets/img/encart-csgo.jpg");
 }
 
-/* ==========================================================================
-    Responsive
-========================================================================== */
-
-/* PC */
-
-@media (min-width: 991px) {
-    .grayscale div {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-    }
-
-    .grayscale div:hover {
-        -webkit-transform: scale(1);
-        transform: scale(1.03);
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
-    }
-
-    h3 {
-        padding: 4%;
-        background: linear-gradient(transparent 0%, rgb(20, 21, 24) 100%);
-        display: inline-block;
-    }
-    #games {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
-        /* Format 16/9 */
-        position: relative;
-        overflow: hidden;
-    }
-    #games .game {
-        min-height: 100%;
-        min-width: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-size: cover;
-    }
-    .game {
-        margin-top: 5%;
-        background-size: cover;
-        position: relative;
-    }
-
-    .container {
-        position: relative;
-    }
-
-    .button-div {
-        position: absolute; 
-        margin: 0;
-        bottom: 0;
-        margin-bottom: 5%;
-        width: 100%;
-    }
-
-    .button-div button {
-        width: 50%;
-        bottom: 0;
-        opacity: 0.5;
-        margin: 0;
-        padding: 0.5%;
-    }
-
-    .button-div button:hover {
-        opacity: 70%;
-    }
-
-    .profile-edit {
-        text-align: center;
-    }
-    #create {
-        margin-top: 5%;
-        position: relative;
-        display: inline-block;
-        width: auto;
-        padding: 2%;
-        border-radius: 56.25%;
-        text-align: center;
-    }
-}
-
-/* Tablette */
-
-@media all and (min-width: 767px) and (max-width: 991px) {
-
-    .grayscale div {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
-        -webkit-transition: .3s ease-in-out;
-        transition: .3s ease-in-out;
-    }
-
-    .grayscale div:hover {
-        -webkit-transform: scale(1);
-        transform: scale(1.02);
-        -webkit-filter: grayscale(0);
-        filter: grayscale(0);
-    }
-    h3 {
-        padding: 4%;
-        background: linear-gradient(transparent 0%, rgb(20, 21, 24) 100%);
-        display: inline-block;
-    }
-    #games {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
-        /* Format 16/9 */
-        position: relative;
-        overflow: hidden;
-    }
-    #games .game {
-        min-height: 100%;
-        min-width: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-size: cover;
-    }
-    .game {
-        margin-top: 5%;
-        background-size: cover;
-    }
-    .container {
-        position: relative;
-        width: 100%;
-    }
-
-    .button-div {
-        position: absolute;
-        margin: 0;
-        bottom: 0;
-        margin-bottom: 5%;
-        width: 100%;
-    }
-
-    .button-div button {
-        width: 50%;
-        bottom: 0;
-        opacity: 0.5;
-        margin: 0;
-        padding: 0.5%;
-    }
-
-    .button-div button:hover {
-        opacity: 70%;
-    }
-    .profile-edit {
-        text-align: center;
-    }
-    #create {
-        margin-top: 5%;
-        position: relative;
-        display: inline-block;
-        width: auto;
-        padding: 2%;
-        border-radius: 56.25%;
-        text-align: center;
-    }
-}
-
 /* Mobile */
 
-@media (max-width:767px) {
+.container {
+    position: relative;
+}
 
-    .container {
-        position: relative;
-    }
+.button-div {
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+}
 
-    .button-div {
-        position: absolute;
-        margin: 0;
-        bottom: 0;
-        margin-bottom: 5%;
-        width: 100%;
-    }
+.button-div button {
+    width: 50%;
+    bottom: 0;
+    opacity: 0.5;
+    margin: 0;
+    padding: 2%;
+}
 
-    .button-div button {
-        width: 50%;
-        bottom: 0;
-        opacity: 0.5;
-        margin: 0;
-        padding: 0.5%;
-    }
+.button-div button:hover {
+    opacity: 70%;
+}
 
-    .button-div button:hover {
-        opacity: 70%;
-    }
-    h3 {
-        padding: 4%;
-        background: linear-gradient(transparent 0%, rgb(20, 21, 24) 100%);
-        display: inline-block;
-    }
-    #games {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%;
-        /* Format 16/9 */
-        position: relative;
-        overflow: hidden;
-    }
-    #games .game {
-        min-height: 100%;
-        min-width: 100%;
-        top: 0;
-        left: 0;
-        position: absolute;
-        background-size: cover;
-    }
-    .game {
-        margin-top: 5%;
-        background-size: cover;
-    }
-    .button-div button {
-        width: 50%;
-        opacity: 30%;
-        position: relative;
-    }
-    .button-div button:hover {
-        opacity: 100%;
-    }
-    .profile-edit {
-        text-align: center;
-    }
-    #create {
-        margin-top: 5%;
-        position: relative;
-        display: inline-block;
-        width: auto;
-        padding: 2%;
-        border-radius: 56.25%;
-        text-align: center;
-    }
+h3 {
+    padding: 3%;
+    background: linear-gradient(transparent 0%, rgb(20, 21, 24) 100%);
+    display: inline-block;
+    font-size: 17px;
+}
+
+#games {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Format 16/9 */
+    overflow: hidden;
+}
+
+#games .game {
+    min-height: 100%;
+    min-width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-size: cover;
+}
+
+.game {
+    opacity: 0.8;
+    background-size: cover;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.button-div button {
+    width: 50%;
+    opacity: 80%;
+    position: relative;
+}
+
+.button-div button:hover {
+    opacity: 100%;
+}
+
+.profile-edit {
+    text-align: center;
+}
+
+#edit {
+    border-right: #171717 1px solid;
+}
+
+#create {
+    margin-top: 5%;
+    position: relative;
+    display: inline-block;
+    width: auto;
+    padding: 2%;
+    border-radius: 56.25%;
+    text-align: center;
 }

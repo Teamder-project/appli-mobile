@@ -1,20 +1,21 @@
-<ion-content>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+    <div class="block">
 
-    <div class="padding">
-        
-        <input color="light" type="mail" placeholder="Adresse Mail">
-     
-        <input color="light" type="password" placeholder="Mot de passe">
-
-        <ion-button id="forget" color="light" slot="end" fill="clear">Mot de passe oublié ?</ion-button>
-
-        <div class="auth">
-            <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-            <ion-button class="submit" type="submit" color="light" expand="block" shape="round">Connexion</ion-button>
-            <br>
-            <ion-button routerLink="/sign-in" color="dark" expand="block" shape="round">Inscription</ion-button>
-        </form>
+        <div class="logo">
+            <a routerLink="/home"><img src="../../../assets/img/logo-teamder.png" alt="logo"></a>
         </div>
+    
+        <div class="padding">
+            <input class="email" color="light" type="mail" formControlName="email" placeholder="Adresse Mail">
+            <input color="light" type="password" formControlName="password" placeholder="Mot de passe">
+            <button id="forget" color="light" slot="end" fill="clear">Mot de passe oublié ?</button>
+    
+            <div class="auth">
+                <button class="submit" type="submit" color="light" expand="block">Connexion</button>
+                <br>
+                <button class="signup" routerLink="/sign-in" color="dark" expand="block">Inscription</button>
+            </div>
+        </div>
+    
     </div>
-
-</ion-content>
+    </form>

@@ -10,10 +10,14 @@ Elle est composée de Justine Picque, Mathyce D'Alessandro, Maxime Deleruyelle e
 
 
 ## Pré-requis
-L'installation de l'API SWIPER est indispensable pour le fonctionnement du swipe. 
 
+VS code
+JAVA
+Ionic lab
+Spring
+Mysql Workbench
+Docker
 ## Utilisation
-
 
 
 ## Initialisation du projet
@@ -21,12 +25,10 @@ Ce projet a été initialisé par [Angular CLI](https://github.com/angular/angul
 
 ## Developement serveur
 
-Lancer `ng serve` pour un serveur dev. Naviguer vers `http://localhost:4200/`. L'application se relancera automatiquement si vous réalisez une modification dans vos fichiers.
-
+Dans la console, ```npm i```
+Pour lancer le serveur ionic, ```ionic lab``` : localhost:8100
+Lancer la partie back avec avec docker ```docker compose up```
 
 ## Plus d'aide
 
 Pour avoir plus d'aide sur l'Angular CLI, utiliser `ng help` ou verifier la page suivante :[Angular CLI Overview and Command Reference](https://angular.io/cli).
-
-## Nous countacter
-Vous pouvez nous contacter aux adresses suivantes : justine.picque@labom2iformation.fr
